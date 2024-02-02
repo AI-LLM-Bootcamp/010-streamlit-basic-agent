@@ -8,7 +8,7 @@ from langchain.agents import (
 from langchain.prompts import StringPromptTemplate
 from langchain_openai import OpenAI
 from langchain.chains import LLMChain
-from langchain_community.utilities.SerpAPIWrapper import SerpAPIWrapper
+from langchain_community.utilities import SerpAPIWrapper
 from typing import List, Union
 from langchain.schema import AgentAction, AgentFinish
 from langchain_community.agent_toolkits import NLAToolkit
