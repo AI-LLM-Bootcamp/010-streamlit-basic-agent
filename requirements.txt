@@ -3,3 +3,4 @@ langchain
 langchain-openai
 faiss-cpu
 langchain-community
+openapi-pydantic
