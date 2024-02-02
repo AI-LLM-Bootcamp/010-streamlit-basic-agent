@@ -26,7 +26,7 @@ def generate_response(openai_api_key, user_query):
     "https://api.speak.com/.well-known/ai-plugin.json",
     "https://www.klarna.com/.well-known/ai-plugin.json",
     "https://schooldigger.com/.well-known/ai-plugin.json",
-]
+    ]
     AI_PLUGINS = [AIPlugin.from_url(url) for url in urls]
 
     embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
