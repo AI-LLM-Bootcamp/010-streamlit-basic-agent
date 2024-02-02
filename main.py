@@ -12,8 +12,8 @@ from typing import List, Union
 from langchain.schema import AgentAction, AgentFinish
 from langchain.agents.agent_toolkits import NLAToolkit
 from langchain.tools.plugin import AIPlugin
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 from langchain.schema import Document
 import re
 
