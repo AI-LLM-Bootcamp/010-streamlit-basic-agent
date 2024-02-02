@@ -8,7 +8,6 @@ from langchain.agents import (
 from langchain.prompts import StringPromptTemplate
 from langchain_openai import OpenAI
 from langchain.chains import LLMChain
-from langchain_community.utilities import SerpAPIWrapper
 from typing import List, Union
 from langchain.schema import AgentAction, AgentFinish
 from langchain_community.agent_toolkits import NLAToolkit
@@ -24,13 +23,8 @@ def generate_response(openai_api_key, user_query):
         openai_api_key=openai_api_key
     )
     urls = [
-    "https://datasette.io/.well-known/ai-plugin.json",
     "https://api.speak.com/.well-known/ai-plugin.json",
-    "https://www.wolframalpha.com/.well-known/ai-plugin.json",
-    "https://www.zapier.com/.well-known/ai-plugin.json",
     "https://www.klarna.com/.well-known/ai-plugin.json",
-    "https://www.joinmilo.com/.well-known/ai-plugin.json",
-    "https://slack.com/.well-known/ai-plugin.json",
     "https://schooldigger.com/.well-known/ai-plugin.json",
 ]
     AI_PLUGINS = [AIPlugin.from_url(url) for url in urls]
