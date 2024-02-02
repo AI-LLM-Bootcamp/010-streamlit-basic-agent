@@ -6,7 +6,8 @@ from langchain.agents import (
     AgentOutputParser,
 )
 from langchain.prompts import StringPromptTemplate
-from langchain import OpenAI, SerpAPIWrapper, LLMChain
+from langchain_openai import OpenAI
+from langchain import SerpAPIWrapper, LLMChain
 from typing import List, Union
 from langchain.schema import AgentAction, AgentFinish
 from langchain.agents.agent_toolkits import NLAToolkit
